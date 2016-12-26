@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "name": "Building Scalable Web Architecture and Distributed Systems",
+            "tags": ["architecture", "scale", "distributed systems"],
+            "src": "http://www.drdobbs.com/web-development/building-scalable-web-architecture-and-d/240142422"
+        }
+        , {
+            "name": "React or Vue: Which Javascript UI Library Should You Be Using?",
+            "tags": ["react", "vue", "frameworks"],
+            "src": "https://medium.com/js-dojo/react-or-vue-which-javascript-ui-library-should-you-be-using-543a383608d#.91hxqqfb8"
+        }
+        , {
+            "name": "How V8 measures real-world performance",
+            "tags": ["v8", "engine", "performance measurement"],
+            "src": "http://v8project.blogspot.nl/2016/12/how-v8-measures-real-world-performance.html"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "to-be-read",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "vue": "^2.1.7"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To be read</title>
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <style type="text/css">
+        .filter-panel {
+            margin-bottom: 10px;
+        }
+
+        .list-group {
+            padding: 0;
+        }
+
+        .list-group-item.odd {
+            background: #dff0d8;
+        }
+
+        .label {
+            margin-right: 5px;
+            font-weight: normal;
+        }
+
+        .new-win {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="container filter-panel">
+            <input type="text" placeholder="Type to filter" class="form-control" v-model.trim="query">
+        </div>
+        <div class="container list-group">
+            <div class="list-group-item" v-for="(item, index) in visibleItems" v-bind:class="{ odd: index % 2 === 0 }">
+                <a :href="item.src" class="list-group-item-heading">{{ item.name }}</a>
+                <a :href="item.src" class="glyphicon glyphicon-new-window new-win" target="_blank"></a>
+                <div>
+                    <span class="label label-default" v-for="tag in item.tags">{{ tag }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
